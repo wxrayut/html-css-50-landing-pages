@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.desc {
+    font-size: 1.5rem;
+    color: rgba(37, 37, 37, 0.8);
+}
+
+.btns {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.order-btn,
+.explore-btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: none;
+    border-radius: 16px;
+    border: 2px solid black;
+}
+
+.order-btn {
+    background: black;
+    color: #ffffff;
+}
+
+.features {
+    width: 650px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.feature {
+    padding: 1.5rem;
+}
+
+.left-side {
+    width: 635px;
+    height: 778px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.stroke-1,
+.stroke-2 {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.stroke-1 {
+    width: 480px;
+    height: 568px;
+    top: 0;
+    left: 0;
+}
+
+.stroke-2 {
+    width: 310px;
+    height: 476px;
+    right: 0;
+    bottom: 0;
+}
+
+.tag-1,
+.tag-2 {
+    position: absolute;
+    background: #685fd4;
+    padding: 16px 24px;
+    color: #ffffff;
+    border-radius: 16px;
+}
+
+.tag-1 {
+    top: 80%;
+    left: -10%;
+}
+
+.tag-2 {
+    top: 15%;
+    right: 0;
+}
+
+.star-1,
+.star-2 {
+    position: absolute;
+}
+
+.star-1 {
+    top: -8.5%;
+    left: -12%;
+}
+
+.sparkle-1,
+.sparkle-2 {
+    position: absolute;
+}
+
+.sparkle-1 {
+    top: 15%;
+    left: 15%;
+}
+
+.sparkle-2 {
+    width: auto;
+    height: 135px;
+    top: 68%;
+    right: 15%;
+}
