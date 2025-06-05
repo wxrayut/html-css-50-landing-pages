@@ -37,15 +37,13 @@ param(
 
 $AssetDirectoryName = "assets"
 
-Write-Host "Cloning from: $TemplateTarget"
-
-
 if (-not (Test-Path $TemplateTarget)) {
     # Write-Error "Template '$TemplateTarget' does not exist."
     # exit 1
     $TemplateTarget = ".\00"
 }
 
+Write-Host "Cloning from: $TemplateTarget"
 
 if (-not $Destination) {
     Write-Error "Please specify at least one destination using: -Destination"
