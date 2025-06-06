@@ -29,7 +29,7 @@
 
 [CmdletBinding()]
 param(
-    [String]$TemplateTarget,
+    [String]$TemplateTarget = ".\00",
     [String[]]$Destination,
     [Switch]$Recurse,
     [Switch]$Force
@@ -38,9 +38,8 @@ param(
 $AssetDirectoryName = "assets"
 
 if (-not (Test-Path $TemplateTarget)) {
-    # Write-Error "Template '$TemplateTarget' does not exist."
-    # exit 1
-    $TemplateTarget = ".\00"
+    Write-Error "Template '$TemplateTarget' does not exist."
+    exit 1
 }
 
 Write-Host "Cloning from: $TemplateTarget"
