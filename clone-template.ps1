@@ -20,7 +20,7 @@
     Allows the copy to overwrite read-only files or otherwise protected files.
 
 .EXAMPLE
-    .\Clone-Template.ps1 -TemplateTarget '.\MyTemplate' -Destination 'Site1', 'Site2' -Recurse -Force
+    .\clone-template.ps1 -TemplateTarget '.\MyTemplate' -Destination 'Site1', 'Site2' -Recurse -Force
 
 .NOTES
     - The script ensures 'assets/images' and 'assets/fonts' folders exist in each destination.
